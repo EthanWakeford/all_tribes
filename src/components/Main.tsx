@@ -1,26 +1,33 @@
 interface MainProps {}
 // import heroImage from '../assets/all_tribes_property.jpg';
 import heroImage from '../assets/all_tribes_blanket.jpg';
+import secondImage from '../assets/all_tribes_people_close.jpg';
 
 const Main: React.FC<MainProps> = ({}) => {
   return (
-    <div className='px-8 pt-24'>
-      <div className='relative w-full'>
-        {/* <img
-          className='absolute inset-0 z-[-10] brightness-[0.1]'
-          src={heroImage.src}
-        ></img> */}
-        <h1 className='text-3xl font-bold font-parisienne'>
-          All Tribes Community Church
+    <div>
+      <div className='mt-16 px-8 mb-8 relative w-full flex flex-col'>
+        <h1 className='text-4xl font-bold text-center self-center font-parisienne'>
+          All Tribes
+        </h1>
+        <h1 className='text-4xl font-bold text-center self-center font-parisienne'>
+          Community Church
         </h1>
         <h2 className='italic text-right'>established 1994.</h2>
-        <p>An American Baptist Church USA denomination.</p>
+        <p>An American Baptist Churcsh USA denomination.</p>
       </div>
-      <div className='mt-40'>
+      <div>
+        <img className='w-full h-[75vw] object-cover' src={heroImage.src}></img>
+      </div>
+      <div className='mt-16'>
         <i>
           "Where we are filling the spiritual needs of a diverse popilation,
           respecting the native and non-native cultures through Jesus Christ"
         </i>
+        <img
+          className='w-full h-[75vw] object-cover mt-8'
+          src={secondImage.src}
+        ></img>
       </div>
       <div className='mt-40'>
         <p>
