@@ -1,18 +1,16 @@
-interface GalleryProps {}
-import image from '../assets/all_tribes_people_close.jpg';
+interface GalleryProps {
+  images: { src: string; alt: string }[];
+}
 
-const Gallery: React.FC<GalleryProps> = ({}) => {
+const Gallery: React.FC<GalleryProps> = ({ images }) => {
   return (
     <>
       <div>
-        <img src={image.src} alt='' />
-        <img src='' alt='' />
-        <img src='' alt='' />
-        <img src='' alt='' />
-        <img src='' alt='' />
-        <img src='' alt='' />
-        <img src='' alt='' />
-        <img src='' alt='' />
+        {images.map((image) => (
+          <div>
+            <img src={image.src} alt='' />
+          </div>
+        ))}
       </div>
     </>
   );

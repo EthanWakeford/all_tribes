@@ -15,7 +15,7 @@ const Main: React.FC<MainProps> = ({}) => {
           Community Church
         </h1>
         <h2 className='italic text-right'>established 1994.</h2>
-        <p>An American Baptist Church USA denomination.</p>
+        {/* <p>An American Baptist Church USA denomination.</p> */}
       </div>
       <div>
         <img
@@ -43,10 +43,22 @@ const Main: React.FC<MainProps> = ({}) => {
             intersection in East Tulsa.
           </p>
         </div>
-        <img
-          className='w-full h-[75vw] object-cover mt-8'
-          src={churchImage.src}
-        ></img>
+        <div>
+          <img
+            className='w-full h-[75vw] object-cover mt-8'
+            src={churchImage.src}
+          ></img>
+          <p className='px-8'>
+            <a
+              href='https://maps.app.goo.gl/Henjm9jJNgn4a82i9'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-700 underline'
+            >
+              2805 S Garnett Road, Tulsa, OK 74129
+            </a>
+          </p>
+        </div>
       </div>
       <div className='mt-8'>
         <div className='px-8'>
