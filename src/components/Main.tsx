@@ -19,7 +19,7 @@ const Main: React.FC<MainProps> = ({}) => {
       </div>
       <div>
         <img
-          className='w-full h-[75vw] object-cover object-bottom'
+          className='w-full h-[75vw] object-cover object-bottom lg:h-auto lg:aspect-[4/2]'
           src={heroImage.src}
         ></img>
       </div>
@@ -31,7 +31,7 @@ const Main: React.FC<MainProps> = ({}) => {
           </i>
         </div>
         <img
-          className='w-full h-[75vw] object-cover mt-8'
+          className='w-full h-[75vw] object-cover lg:h-auto lg:aspect-[4/2] object-center'
           src={secondImage.src}
         ></img>
       </div>
@@ -45,7 +45,7 @@ const Main: React.FC<MainProps> = ({}) => {
         </div>
         <div>
           <img
-            className='w-full h-[75vw] object-cover mt-8'
+            className='w-full h-[75vw] object-cover object-top lg:h-auto lg:aspect-[4/2]'
             src={churchImage.src}
           ></img>
           <p className='px-8'>
