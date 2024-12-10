@@ -19,7 +19,7 @@ const Main: React.FC<MainProps> = ({}) => {
       </div>
       <div>
         <img
-          className='w-full  h-[75vw] object-cover object-bottom'
+          className='w-full h-[75vw] object-cover object-bottom'
           src={heroImage.src}
         ></img>
       </div>
