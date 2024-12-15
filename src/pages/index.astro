@@ -2,9 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Main from '../components/Main';
 import Gallery from '../components/Gallery';
+
+const img1 = 'src/assets/all_tribes_blanket.jpg';
+const img2 = 'src/assets/story_night_crowd.jpg';
 ---
 
 <Layout>
   <Main />
-  <!-- <Gallery /> -->
+  <Gallery
+    images={[
+      { src: img1, alt: 'alt' },
+      { src: img2, alt: 'alt' },
+    ]}
+    client:visible
+  />
 </Layout>

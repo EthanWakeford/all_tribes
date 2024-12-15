@@ -6,12 +6,12 @@ import churchImage from '../assets/community_church_outside.webp';
 
 const Main: React.FC<MainProps> = ({}) => {
   return (
-    <div className='mb-32'>
+    <div className='mb-32 lg:text-xl'>
       <div className='mt-16 mb-8 px-8 relative w-full flex flex-col'>
         <h1 className='text-4xl font-bold text-center self-center font-parisienne'>
           All Tribes
         </h1>
-        <h1 className='text-4xl font-bold text-center self-center font-parisienne'>
+        <h1 className='text-4xl lg:text-5xl font-bold text-center self-center font-parisienne'>
           Community Church
         </h1>
         <h2 className='italic text-right'>established 1994.</h2>
