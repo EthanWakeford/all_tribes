@@ -19,7 +19,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
 
   const getImageClasses = (index: number) => {
     let baseClasses =
-      'w-full bg-cover aspect-square bg-center transition-all duration-slow ease-in-out';
+      'w-full bg-cover aspect-square bg-center transition-all duration-slow ease-in-out lg:h-auto lg:opacity-100';
     if (index === currentImageIndex) {
       return `${baseClasses} transform opacity-100 h-auto`;
     } else {
@@ -30,7 +30,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
   return (
     <div>
       <h1 className='text-center font-serif text-2xl'>Some Pictures of Us</h1>
-      <div className='relative aspect-square w-full shadow-inner p-8'>
+      <div className='relative w-full shadow-inner p-8 lg:grid lg:grid-cols-2 lg:gap-8'>
         {images.map((image, index) => (
           <div
             key={index}
